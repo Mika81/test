@@ -1,5 +1,7 @@
 <?php
 
+//namespace aston\Rss2\Reader;
+
 /**
  *
  * Reader.php

@@ -1,4 +1,7 @@
 <?php
+
+namespace aston\Rss2\Item;
+
 /**
  * Created by PhpStorm.
  * User: mika
@@ -7,5 +10,79 @@
  */
 
 class Item {
+    private $title;
+    private $description;
+    private $link;
+    private $date;
+    private $picture;
+    private $author;
 
+
+    //SETTERS
+    public function setTitle($title)
+    {
+        $this->title = (string) $title;
+        return $this;
+    }
+
+    public function setDescription($description)
+    {
+        $this->description = (string) $description;
+        return $this;
+    }
+
+    public function setLink($link)
+    {
+        $this->link = (string) $link;
+        return $this;
+    }
+
+    public function setDate(\DateTime $date)
+    {
+        $this->date = (string) $date;
+        return $this;
+    }
+
+    public function setPicture($picture)
+    {
+        $this->picture = (string) $picture;
+        return $this;
+    }
+
+    public function setAuthor($author)
+    {
+        $this->author = (string) $author;
+        return $this;
+    }
+
+    //GETTERS
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    public function getLink()
+    {
+        return $this->link;
+    }
+
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    public function getPicture()
+    {
+        return $this->picture;
+    }
+
+    public function getAuthor()
+    {
+        return $this->author;
+    }
 }

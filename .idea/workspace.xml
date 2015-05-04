@@ -39,24 +39,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Reader.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Reader.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/xml/aston/Rss2/Reader.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7063037" vertical-offset="102" max-vertical-offset="901">
-                  <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#7#31#0#PHP" expanded="true" />
-                  </folding>
+                <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="935">
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Item.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Item.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/xml/aston/Rss2/Item.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="187">
-                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                  <folding />
+                <state vertical-scroll-proportion="0.756447" vertical-offset="186" max-vertical-offset="1496">
+                  <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#35#115#0#PHP" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -88,6 +88,7 @@
         <option value="$PROJECT_DIR$/xml/aston/Reader.php" />
         <option value="$PROJECT_DIR$/xml/index.php" />
         <option value="$PROJECT_DIR$/xml/aston/Rss2/Reader.php" />
+        <option value="$PROJECT_DIR$/xml/aston/Rss2/Item.php" />
       </list>
     </option>
   </component>
@@ -270,14 +271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xml/aston/Rss2/Item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="187">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xml/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="986">
@@ -290,10 +283,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xml/aston/Rss2/Reader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7063037" vertical-offset="102" max-vertical-offset="901">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="935">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml/aston/Rss2/Item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.756447" vertical-offset="186" max-vertical-offset="1496">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
           <folding>
-            <element signature="e#7#31#0#PHP" expanded="true" />
+            <element signature="e#35#115#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
