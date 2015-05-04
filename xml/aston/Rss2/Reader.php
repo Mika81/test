@@ -1,6 +1,6 @@
 <?php
 
-//namespace aston\Rss2\Reader;
+namespace Aston\Rss2;
 
 /**
  *
@@ -29,9 +29,22 @@ class Reader
         $this->xml = simplexml_load_file($filename);
     }
 
-//    public function getItems(){
-//
-//    }
+    public function getItems(){
+    $items = [];
+    foreach($this->xml->channel->item as $xmlItem)
+    {
+        $item = new Item();
+        $item->setTitle($xmlItem->title)
+            ->setDescription($xmlItem->description)
+            ->setLink($xmlItem->link)
+            ->setDate(new \Datetime($xmlItem->pubDate))
+            ->setPicture($xmlItem->thumbnail['url'])
+            ->setAuthor($xmlItem->author);
+
+        array_push($items, $item);
+    }
+    return $items;
+}
 
     public function reader()
     {

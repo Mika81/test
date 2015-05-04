@@ -1,6 +1,6 @@
 <?php
 
-namespace aston\Rss2\Item;
+namespace Aston\Rss2;
 
 /**
  * Created by PhpStorm.
@@ -39,7 +39,7 @@ class Item {
 
     public function setDate(\DateTime $date)
     {
-        $this->date = (string) $date;
+        $this->date = $date;
         return $this;
     }
 

@@ -5,11 +5,6 @@
  *
  */
 
-include_once('aston/Rss2/Reader.php');
-
-$r = new Reader("http://www.france24.com/fr/sports/rss");
-
-$r->reader();
 
 //
 //$xml = simplexml_load_file("http://www.france24.com/fr/sports/rss");

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="fr">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" method="post">
+        <select name="choix">
+            <option value="sport" >Sport</option>
+            <option value="culture">Culture</option>
+            <option value="planete" >Planète</option>
+        </select>
+        <input type="submit" value="envoyer">
+    </form>
+    <?php foreach($items as $item) : ?>
+        <article>
+            <h2><?= $item->getTitle(); ?></h2>
+            <div><img src="<?= $item->getPicture(); ?>"/></div>
+            <p><?= $item->getDescription(); ?></p>
+            <p><?= $item->getDate()->format('d/m/Y'); ?></p>
+        </article>
+    <?php endforeach ?>
+</body>
+</html>
