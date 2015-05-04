@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- un fichier xml commence tjrs par un dossier racine -->
+<contacts type="mobile">
+	<contact category="pro">
+		<nom>Foo</nom>
+		<prenom>Bar</prenom>
+            <emails>
+                <email category="pro">toto@gmail.fr</email>
+                <email category="perso">toto@yahoo.fr</email>
+            </emails>
+	</contact>
+    <contact category="pro">
+		<nom>Jim</nom>
+		<prenom>Anderson</prenom>
+            <emails>
+                <email category="pro">jim@gmail.fr</email>
+                <email category="perso">jim@yahoo.fr</email>
+            </emails>
+	</contact>
+</contacts>
