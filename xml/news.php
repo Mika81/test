@@ -19,7 +19,7 @@ if(isset($_POST['choix'])){
         $url = "http://www.france24.com/fr/tag/environnement/rss";
     }
 }else{
-    $url = "http://www.france24.com/fr/sports/rss";
+    $url = "http://www.journaldunet.com/rss/";
 }
 
 $reader = new \Aston\Rss2\Reader($url);
