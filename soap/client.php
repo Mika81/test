@@ -13,7 +13,8 @@ $client = new SoapClient(null, $options);
 
 try {
     /* On va chercher la méthode sur le server */
-    echo $client->sayHello();
+    echo $client->sayHello() . "<br/>";
+    echo $client->getTemperature('rrr');
 }catch (Exception $e){
     echo $e->getMessage();
 }

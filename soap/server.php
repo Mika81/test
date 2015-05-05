@@ -3,6 +3,8 @@
 /* Pour la partie DEV, effacer le cache, à retirer avant mise en prod  */
 ini_set('soap.wsdl_cache_enable', 0);
 
+require_once "src/Meteo.php";
+
 function sayHello(){
     return 'Hello World !';
 }
@@ -32,7 +34,8 @@ $options = array(
 $server = new SoapServer(null, $options);
 
 try{
-    $server->addFunction("sayHello");
+    $server->setClass('Meteo');
+    $server->addFunction(["sayHello", "getTemperature"]);
     /* pour que cela fonctionne on exécute la métode handle
        -> écoute, exécute et sers  */
     $server->handle();
