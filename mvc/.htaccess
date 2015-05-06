@@ -1,0 +1,11 @@
+# .htaccess
+
+# Démarre le moteur de réécriture
+RewriteEngine On
+
+# Définit la racine, la base de mon url
+RewriteBase /test/mvc
+
+# Je cr"er une règle de réécriture d'url
+# [L] === LAST === Dernière règle
+RewriteRule ^([a-z0-9]*)$ index.php?controller=$1 [L]

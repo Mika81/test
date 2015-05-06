@@ -7,6 +7,14 @@
     <h1>Home Page</h1>
     <p>Lorem Ipsum exodus minus tempera</p>
 
+    <div>
+        <?php foreach($articles as $article) : ?>
+        <article>
+            <h2><?= $article['title']; ?></h2>
+            <p><?= $article['content']; ?></p>
+        </article>
+        <?php endforeach; ?>
+    </div>
 </div>
 
 <?php include 'footer.phtml'; ?>
