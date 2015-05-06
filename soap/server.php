@@ -22,7 +22,7 @@ function getTemperature($ville){
     return $villes[$ville];
 }
 
-/* Les opions de base pour un server */
+/* Les options de base pour un server */
 $options = array(
     /* uri est une sorte de namespace, une sorte d'identifiant unique */
     'uri' => 'http://toto.com/uri/perso',
@@ -36,7 +36,7 @@ $server = new SoapServer(null, $options);
 try{
     $server->setClass('Meteo');
     $server->addFunction(["sayHello", "getTemperature"]);
-    /* pour que cela fonctionne on exécute la métode handle
+    /* pour que cela fonctionne on exécute la méthode handle
        -> écoute, exécute et sers  */
     $server->handle();
 }catch (Exception $e){
