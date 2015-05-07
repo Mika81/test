@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: mika
- * Date: 07/05/2015
- * Time: 16:14
- */
 
-class DbNews {
+class DbNews implements Iterator
+{
     private $news;
 
     public function __construct(){
@@ -24,5 +19,30 @@ class DbNews {
 
     public function getNews(){
         return $this->news;
+    }
+
+    public function current()
+    {
+        return current($this->news);
+    }
+
+    public function next()
+    {
+        return next($this->news);
+    }
+
+    public function key()
+    {
+        return key($this->news);
+    }
+
+    public function valid()
+    {
+        return $this->key() !== null;
+    }
+
+    public function rewind()
+    {
+        reset($this->news);
     }
 }

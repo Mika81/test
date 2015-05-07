@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: mika
- * Date: 07/05/2015
- * Time: 16:17
- */
 
-class RssNews {
+class RssNews implements Iterator
+{
     private $articles;
 
     public function __construct(){
@@ -22,7 +17,33 @@ class RssNews {
         );
     }
 
-    public function getArticles(){
+    public function getArticles()
+    {
         return $this->articles;
+    }
+
+    public function current()
+    {
+        return current($this->articles);
+    }
+
+    public function next()
+    {
+        return next($this->articles);
+    }
+
+    public function key()
+    {
+        return key($this->articles);
+    }
+
+    public function valid()
+    {
+        return $this->key() !== null;
+    }
+
+    public function rewind()
+    {
+        reset($this->articles);
     }
 }

@@ -3,7 +3,7 @@
 class NewsManager {
     private $sources = [];
 
-    public function addSource($source)
+    public function addSource(Iterator $source)
     {
         $this->sources[] = $source;
         return $this;
@@ -16,17 +16,10 @@ class NewsManager {
 
     public function showNews()
     {
-        foreach ($this->sources as $source) {
-            if ($source instanceof RssNews) {
-                foreach ($source->getArticles() as $article) {
-                    echo $article['title'] . '<br>';
-                    echo $article['content'] . '<br><br>';
-                }
-            } elseif ($source instanceof DbNews) {
-                foreach ($source->getNews() as $article) {
-                    echo $article['title'] . '<br>';
-                    echo $article['content'] . '<br><br>';
-                }
+        foreach ($this->getSources() as $source) {
+            foreach ($source as $article) {
+                echo $article['title'] . '<br>';
+                echo $article['content'] . '<br><br>';
             }
         }
     }
